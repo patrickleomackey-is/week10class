@@ -16,8 +16,7 @@ document.getElementById('mouse').addEventListener('mouseout', out);
 
 // ********** Add an event listener for the bgColor click event
 // even listener for bgColor click
-
-
+//
 
 
 

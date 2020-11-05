@@ -10,10 +10,10 @@ document.getElementById('mouse').addEventListener('mouseout', out);
 
 // ********** Add an event listener for the hide button click event **********
 // event listener for hide button click
-
+   document.getElementById('hideButton').addEventListener('click',hideMe);
 // ********** Add an event listener for the bulb click event **********
 // event listener for bulb click
-
+document.getElementById('bulb').addEventListener('click',lightMeUp);
 // ********** Add an event listener for the bgColor click event
 // even listener for bgColor click
 
@@ -26,7 +26,7 @@ function displayDate() {
 }
 
 //*****************************************************************************
-function sayHello() {
+//function sayHello() {
 //    alert("Hi there!");
 //}
 //Or... change the text on the button each time it's clicked
@@ -82,13 +82,18 @@ function out() {
 //-----------------------------
 
 function hideMe() {
-    
+ document.getElementById('textHide').hidden = true;
 }
 
 function lightMeUp() {
     var picture = document.getElementById('bulb');
     var picsrc = picture.src;
-//Hint: search the string 'picsrc' for the picture filename    
+//Hint: search the string 'picsrc' for the picture filename 
+if (picsrc.search('bulbon') >= 0) {
+    picture.src = 'bulboff.jfif';
+    } else {
+        picture.src = 'bulbon.jfif';
+}
 }
 
 function colorChange() {

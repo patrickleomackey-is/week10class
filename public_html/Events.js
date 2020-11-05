@@ -39,7 +39,7 @@ function sayHello() {
       document.getElementById('helloButton').innerHTML = "Hello!";        
    }
 //    
-//}
+}
 
 //*****************************************************************************
 function Validate() {

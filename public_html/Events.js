@@ -16,7 +16,7 @@ document.getElementById('mouse').addEventListener('mouseout', out);
 
 // ********** Add an event listener for the bgColor click event
 // even listener for bgColor click
-//
+
 
 
 
@@ -27,17 +27,17 @@ function displayDate() {
 
 //*****************************************************************************
 function sayHello() {
-    alert("Hi there!");
-}
+//    alert("Hi there!");
+//}
 //Or... change the text on the button each time it's clicked
-//function sayHello() {
-//    var text = document.getElementById('helloButton').innerHTML;
-//    if (text === "Hello!") {
-//        document.getElementById('helloButton').innerHTML = "Hi there!";
-//    }
-//    else {
-//        document.getElementById('helloButton').innerHTML = "Hello!";        
-//    }
+function sayHello() {
+    var text = document.getElementById('helloButton').innerHTML;
+   if (text === "Hello!") {
+       document.getElementById('helloButton').innerHTML = "Hi there!";
+   }
+   else {
+      document.getElementById('helloButton').innerHTML = "Hello!";        
+   }
 //    
 //}
 

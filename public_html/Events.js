@@ -16,7 +16,7 @@ document.getElementById('mouse').addEventListener('mouseout', out);
 document.getElementById('bulb').addEventListener('click',lightMeUp);
 // ********** Add an event listener for the bgColor click event
 // even listener for bgColor click
-
+document.getElementById("bgColor").addEventListener('click',colorChange);
 
 
 
@@ -101,5 +101,17 @@ function colorChange() {
 // Challenge! Make the background color scroll through the colors
 // of the rainbow (RoyGBiv), one color change with each click.
 
-    var color = document.body.style.backgroundColor;
+ //   var color = document.body.style.backgroundColor = 'red';
+   
+var color = document.body.style.backgroundColor = 'red';
+if (color === "red"){
+    color = 'orange';
+    
+}else if (color === 'orange'){
+    color = 'yellow';
+}else if (color === 'yellow'){
+    color = 'green';
+}
+  
+document.body.style.backgroundColor = color;
 }
